@@ -1,5 +1,5 @@
 {
-  "homepage":"https://github.com/Guilhermeeaugustop/TripWay2",
+  "homepage":"https://github.com/Guilhermeeaugustop/TripWay",
   "name": "components",
   "private": true,
   "version": "0.0.0",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "run npm build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
