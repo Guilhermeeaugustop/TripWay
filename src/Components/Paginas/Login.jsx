@@ -7,8 +7,8 @@ const Login = () => {
   return (
     
     <div className='container'>
+      <h1>TripWay</h1>
         <form>
-            <h1>TripWay</h1>
             <div className='input-field'>
                 <input type="email" placeholder='Email'/>
                 <FaUser className='icon' />
@@ -32,7 +32,6 @@ const Login = () => {
              <div className='singup-link'>
                 <p>Não Possui conta? <Link to="/SingIn">Click aki</Link></p>
              </div>
-
         </form>
     </div>
   )
