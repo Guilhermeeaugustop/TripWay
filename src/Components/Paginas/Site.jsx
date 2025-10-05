@@ -1,15 +1,19 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaRoute, FaSearch } from "react-icons/fa";
+import paris from "../../assets/Paris.jpg";
+import roma from "../../assets/Roma.jpg";
+import tokyo from "../../assets/Tokyo.jpg";
+import Rj from "../../assets/Rj.jpg";
+import Praga from "../../assets/Praga.jpg";
 import "./Site.css";
 
-
 const DESTINOS = [
-  { id: 1, nome: "Paris", img:("components/src/assets/Paris.jpg") },
-  { id: 2, nome: "Roma", img: "https://images.unsplash.com/photo-1549890762-0a3f8933bcf8?w=400" },
-  { id: 3, nome: "Tokyo", img: "https://images.unsplash.com/photo-1549692520-acc6669e2f0c?w=400" },
-  { id: 4, nome: "Rio de Janeiro", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" },
-  { id: 5, nome: "Praga", img: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400" },
+  { id: 1, nome: "Paris", img: paris },
+  { id: 2, nome: "Roma", img: roma },
+  { id: 3, nome: "Tokyo", img: tokyo },
+  { id: 4, nome: "Rio de Janeiro", img: Rj },
+  { id: 5, nome: "Praga", img: Praga },
 ];
 
 export default function Site() {
