@@ -1,4 +1,10 @@
-
+.Titulo2{
+    width: auto;
+    margin-left: 55px;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
 .container1{
     margin-top: auto;
     margin: auto;
