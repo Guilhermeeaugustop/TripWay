@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 const Login = () => {
 
   return (
-    
-    <div className='container'>
+    <div>
       <h1>TripWay</h1>
+    </div>
+    <div className='container'>
+      
         <form>
             <div className='input-field'>
                 <input type="email" placeholder='Email'/>
