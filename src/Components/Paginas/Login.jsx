@@ -5,45 +5,38 @@ import { Link } from "react-router-dom";
 const Login = () => {
 
   return (
-    <div>
-      <h1>TripWay</h1>
-    </div>
-    <div className='container'>
-      
+    <div className="principal">
+      <div className="titulo">
+        <h1>TripWay</h1>
+      </div>
+      <div className='container'>
         <form>
-            <div className='input-field'>
-                <input type="email" placeholder='Email'/>
-                <FaUser className='icon' />
-            </div>
-            <div className='input-field'>
-                <input type="password" placeholder='Senha'/>
-                <FaLock className='icon' />
-             </div>
-
-             <div className='recall-forget'>
-                <label htmlFor="">
-                    <input type="checkbox" />
-                    Lembre de mim
-                </label>
-             </div>
-
-             <Link to="/Site">
-               <div className="Entrar"><b>Entrar</b></div>
-             </Link>
-
-             <div className='singup-link'>
-                <p>Não Possui conta? <Link to="/SingIn">Click aki</Link></p>
-             </div>
+          <div className='Email'>
+            <label htmlFor="email"><b>Email</b></label>
+            <input type="email" placeholder='Email' className="Emailinput"/>
+            <FaUser className='icon' />
+          </div> 
+          <div className='Senha'>
+             <label htmlFor="password"><b>Password</b></label>
+            <input type="password" placeholder='Senha' className="Senhainput"/>
+            <FaLock className='icon' />
+          </div>
+          <div className='box'>
+            <label htmlFor="">
+              <input type="checkbox" />
+              Lembre de mim
+            </label>
+          </div>
+          <Link to="/Site">
+            <div className="Entrar"><b>Entrar</b></div>
+          </Link>
+          <div className='Semconta'>
+            <p>Não possui conta? <Link to="/SingIn">Click aki</Link></p>
+          </div>
         </form>
+      </div>
     </div>
   )
-  const [username, setUsername] = setUsername("");
-  const [password, setPassword] = setPassword("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Envio")
-  }
 }
 
 export default Login
