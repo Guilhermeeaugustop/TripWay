@@ -28,7 +28,7 @@ const Login = () => {
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ email, senha: password }), // Note que o campo do backend pode ser 'senha'
+            body: JSON.stringify({ email, password: password }), // Note que o campo do backend pode ser 'senha'
         });
 
         const data = await response.json();
