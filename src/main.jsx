@@ -5,6 +5,7 @@ import App from './Caminhos/App.jsx';
 import {createBrowserRouter, Navigate, RouterProvider} from "react-router-dom";
 import AppSingIn from './Caminhos/AppSingIn.jsx';
 import AppSite from './Caminhos/AppSite.jsx';
+import AppRoutes from 'components/src/Components/routes/AppRoutes.jsx';
 
 const router = createBrowserRouter([
   {
